@@ -1,0 +1,12 @@
+: Topic{topic}
+Context: {context}
+
+Write a balanced debate with two arguments:
+
+PRO:
+- Argument 1
+- Argument 2
+
+CON:
+- Argument 1
+- Argument 2
