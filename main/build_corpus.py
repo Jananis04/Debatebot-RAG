@@ -1,7 +1,5 @@
 import wikipedia
 import os
-
-# List of topics you want to include in your corpus
 topics = [
     "Artificial intelligence",
     "Ethics of artificial intelligence",
@@ -20,8 +18,6 @@ for topic in topics:
         print(f"Fetching page for: {topic}")
         page = wikipedia.page(topic)
         content = page.content
-
-        # Save to a file named after the topic (replace spaces with underscores)
         filename = f"{topic.replace(' ', '_')}.txt"
         filepath = os.path.join(corpus_dir, filename)
 
