@@ -5,11 +5,7 @@ def fetch_wikipedia_page(topic, max_sections=3):
     page = wiki.page(topic)
     if not page.exists():
         return None
-
-    # Gather page summary and first few sections' text for context
     content = page.summary + "\n\n"
-
-    # Add first few sections to provide more info
     count = 0
     for section in page.sections:
         if count >= max_sections:
